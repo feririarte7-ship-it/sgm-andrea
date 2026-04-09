@@ -9,11 +9,11 @@
 <meta name="apple-mobile-web-app-title" content="SGM">
 <meta name="theme-color" content="#0A5240">
 <title>SGM — Tu escudo mental</title>
-<link rel="manifest" href="/sgm/manifest.json">
-<link rel="apple-touch-icon" href="/icons/sgm-192.png">
-<link rel="apple-touch-icon" sizes="192x192" href="/icons/sgm-192.png">
-<link rel="apple-touch-icon" sizes="512x512" href="/icons/sgm-512.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/icons/sgm-192.png">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/sgm-192.png">
+<link rel="apple-touch-icon" sizes="192x192" href="icons/sgm-192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="icons/sgm-512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/sgm-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -1338,7 +1338,7 @@ window.addEventListener('appinstalled', () => {
 // ── SERVICE WORKER ────────────────────────────────────────────────
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sgm/sw.js', { scope: '/sgm/' })
+    navigator.serviceWorker.register('sw.js', { scope: '/sgm-andrea/' })
       .then(reg => {
         reg.addEventListener('updatefound', () => {
           const nw = reg.installing;

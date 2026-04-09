@@ -1,11 +1,12 @@
 // SGM Service Worker v2.0 — Cache-first offline strategy
-const CACHE  = 'sgm-v2';
+const CACHE  = 'sgm-v3';
+const BASE   = '/sgm-andrea';
 const ASSETS = [
-  '/sgm/',
-  '/sgm/index.html',
-  '/sgm/manifest.json',
-  '/icons/sgm-192.png',
-  '/icons/sgm-512.png',
+  BASE + '/',
+  BASE + '/index.html',
+  BASE + '/manifest.json',
+  BASE + '/icons/sgm-192.png',
+  BASE + '/icons/sgm-512.png',
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'
 ];
 
@@ -39,7 +40,7 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE).then(c => c.put(e.request, clone));
           return res;
         })
-        .catch(() => caches.match('/sgm/') || caches.match('/sgm/index.html'))
+        .catch(() => caches.match(BASE + '/') || caches.match(BASE + '/index.html'))
     );
     return;
   }

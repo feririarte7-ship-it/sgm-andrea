@@ -2,8 +2,8 @@
   "name": "SGM — Tu escudo mental",
   "short_name": "SGM",
   "description": "Asistente de gestión mental para Andrea",
-  "start_url": "/sgm/?pwa=1",
-  "scope": "/sgm/",
+  "start_url": "/sgm-andrea/?pwa=1",
+  "scope": "/sgm-andrea/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#0A5240",
@@ -11,28 +11,27 @@
   "categories": ["productivity", "medical"],
   "icons": [
     {
-      "src": "/icons/sgm-192.png",
+      "src": "icons/sgm-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/sgm-512.png",
+      "src": "icons/sgm-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "screenshots": [],
   "shortcuts": [
     {
       "name": "Agenda de hoy",
-      "url": "/sgm/?tab=agenda",
+      "url": "/sgm-andrea/?tab=agenda",
       "description": "Ver sesiones de hoy"
     },
     {
       "name": "Nueva sesión",
-      "url": "/sgm/?action=nueva-sesion",
+      "url": "/sgm-andrea/?action=nueva-sesion",
       "description": "Registrar una nueva sesión"
     }
   ]
